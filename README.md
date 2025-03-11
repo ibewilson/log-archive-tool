@@ -16,41 +16,42 @@ This tool is useful for **system maintenance**, keeping logs organized while sav
 
 ## Installation & Usage
 
-### 1️ Clone the Repository
+### 1. Clone the Repository
 
 In bash:
 
 git clone https://github.com/ibewilson/log-archive-tool.git
 cd log-archive-tool
 
-### 2️ Make the Script Executable
+### 2.Make the Script Executable
 chmod +x log-archive.sh
 
-### 3️ Run the Script
+### 3. Run the Script
 Provide a log directory as an argument:
 ./log-archive.sh /var/log
 
-##Example Output:
+## Example Output:
 Logs successfully archived: ./archives/logs_archive_20240311_143215.tar.gz
 
-##Automate with Cron Jobs
+## Automate with Cron Jobs
 
 To schedule log archiving daily at midnight:
 
-###1️ Open the cron editor:
+### 1. Open the cron editor:
 crontab -e
 
-###2️ Add this line:
+### 2. Add this line:
 0 0 * * * /path/to/log-archive.sh /var/log
 (Replace /path/to/log-archive.sh with the actual script path.)
 
-##Project Page
+## Project Page
 https://github.com/ibewilson/log-archive-tool
 
-##Author
+## Author
 Ibewilson
 
-##License
+## License
 This project is open-source under the MIT License.
 
-####Roadmap Project URL:https://roadmap.sh/projects/log-archive-tool 
+#### Roadmap Project URL:https://roadmap.sh/projects/log-archive-tool 
+
